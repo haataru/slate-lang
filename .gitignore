@@ -1,4 +1,16 @@
 .zig-cache/
+zig-cache/
 zig-out/
+*.o
 *.exe
-*.pdb
+*.exe~
+*.dll
+*.lib
+
+*.swp
+*.swo
+*~
+.DS_Store
+
+*.tmp
+*.log

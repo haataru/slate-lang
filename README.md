@@ -1,18 +1,20 @@
+```markdown
 # Slate
 
-<div align="center">
-  <img src="https://i.postimg.cc/hj9nKrNy/rounded-in-photoretrica.png" alt="Slate Logo" width="300" height="300">
-</div>
-
-<br>
-
-<div align="right">
-  <strong>Slate</strong> v0.1<br>
-  <strong>Language</strong> Zig<br>
-  <strong>Type</strong> Interpreted<br>
-  <strong>Memory</strong> Stack<br>
-  <strong>License</strong> MIT
-</div>
+<table>
+  <tr>
+    <td valign="top">
+      <strong>Slate</strong> v0.1<br>
+      <strong>Language</strong> Zig<br>
+      <strong>Type</strong> Interpreted<br>
+      <strong>Memory</strong> Stack<br>
+      <strong>License</strong> MIT
+    </td>
+    <td align="right" width="300">
+      <img src="https://i.postimg.cc/hj9nKrNy/rounded-in-photoretrica.png" alt="Slate Logo" width="300" height="300">
+    </td>
+  </tr>
+</table>
 
 Простой интерпретируемый язык программирования с ручным управлением памятью, написанный на Zig.
 
@@ -52,11 +54,8 @@ zig build
 
 ```slate
 fn main() {
-    let x = 42
-    let ptr = &x
-    
-    print(x)   // 42
-    print(*ptr) // 42
+    let x: i32 = 123
+    print(x)
 }
 ```
 
@@ -78,5 +77,3 @@ src/
 3. **Интерпретатор** — выполняет AST
 
 Интерпретатор использует стековую модель памяти с таблицей символов.
-
-

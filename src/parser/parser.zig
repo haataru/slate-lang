@@ -67,13 +67,13 @@ pub const Parser = struct {
     }
 
     fn parseVariableDecl(self: *Parser) ParseError!*ast.Expression {
-        _ = self.advance(); // let
+        _ = self.advance();
         const name = self.expectIdent();
 
         // Тип опционален
         if (self.check(.colon)) {
-            _ = self.advance(); // пропускаем :
-            _ = self.expectIdent(); // пропускаем тип
+            _ = self.advance();
+            _ = self.expectIdent();
         }
 
         try self.expect(.equals);
@@ -123,7 +123,7 @@ pub const Parser = struct {
     }
 
     fn parsePrintCall(self: *Parser) ParseError!*ast.Expression {
-        _ = self.advance(); // print
+        _ = self.advance();
         try self.expect(.lparen);
         const arg = try self.parseExpression();
         try self.expect(.rparen);
@@ -137,7 +137,7 @@ pub const Parser = struct {
     }
 
     fn parseReturnStmt(self: *Parser) ParseError!*ast.Expression {
-        _ = self.advance(); // return
+        _ = self.advance();
         const value = try self.parseExpression();
 
         const rs = try self.allocator.create(ast.ReturnStmt);
@@ -166,7 +166,6 @@ pub const Parser = struct {
         return expr;
     }
 
-    // Helpers
     fn isAtEnd(self: *Parser) bool {
         return self.peek().type == .eof;
     }
