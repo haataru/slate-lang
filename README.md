@@ -1,19 +1,18 @@
 # Slate
 
-<table>
-  <tr>
-    <td valign="top">
-      <strong>Slate</strong> v0.1<br>
-      <strong>Language</strong> Zig<br>
-      <strong>Type</strong> Interpreted<br>
-      <strong>Memory</strong> Stack<br>
-      <strong>License</strong> MIT
-    </td>
-    <td align="right" width="300">
-      <img src="https://i.postimg.cc/hj9nKrNy/rounded-in-photoretrica.png" alt="Slate Logo" width="300" height="300">
-    </td>
-  </tr>
-</table>
+<div align="center">
+  <img src="https://i.postimg.cc/hj9nKrNy/rounded-in-photoretrica.png" alt="Slate Logo" width="300" height="300">
+</div>
+
+<div align="center">
+  <strong>Slate</strong> v0.1 &nbsp;|&nbsp;
+  <strong>Language</strong> Zig &nbsp;|&nbsp;
+  <strong>Type</strong> Interpreted &nbsp;|&nbsp;
+  <strong>Memory</strong> Stack &nbsp;|&nbsp;
+  <strong>License</strong> MIT
+</div>
+
+<br>
 
 Простой интерпретируемый язык программирования, написанный на Zig.
 
@@ -25,8 +24,6 @@
 - Целочисленные литералы (i32)
 - Функция `print` для вывода
 - Функции с точкой входа `main`
-- Блоки `{ ... }`
-- Указатели (экспериментально: `&` и `*`)
 
 ## Синтаксис
 
